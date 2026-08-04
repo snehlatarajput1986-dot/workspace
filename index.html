@@ -28,7 +28,6 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Logo image styling */
         .logo-img {
             width: 140px;
             height: 140px;
@@ -202,8 +201,10 @@
 
     <!-- Hero Banner -->
     <div class="hero">
-        <!-- YAHAN APNE LOGO KA SAHI FILE NAME LIKHEIN (Jaise: logo.png ya 1000806254.jpg) -->
-        <img src="1000806254.png" alt="Koshi Enterprises Logo" class="logo-img" onerror="this.style.display='none'">
+        <!-- Direct Logo Image Tag (Using SVG fallback/icon container if needed, or direct render) -->
+        <div style="width: 120px; height: 120px; margin: 0 auto 15px auto; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+            <span style="font-size: 32px; font-weight: 900; color: #0b0f19; font-family: sans-serif;">KE</span>
+        </div>
         
         <h1>KOSHI ENTERPRISES</h1>
         <div class="tagline">"Your All-in-One Professional Document Generation Hub."</div>
