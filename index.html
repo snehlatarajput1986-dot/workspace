@@ -13,15 +13,19 @@
         }
 
         body {
-            background-image: linear-gradient(rgba(245, 247, 250, 0.85), rgba(245, 247, 250, 0.85)), url('WhatsApp Image 2026-08-04 at 9.31.15 PM (1).jpeg');
+            /* Photo aur ek strong dark gradient overlay */
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                url('WhatsApp Image 2026-08-04 at 9.31.15 PM (1).jpeg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            color: #333;
+            color: #fff; /* Text ka rang safed kar diya hai */
             padding: 40px 20px;
             display: flex;
             justify-content: center;
+            min-height: 100vh;
         }
 
         .container {
@@ -35,18 +39,17 @@
         /* Top Header Card */
         .header-card {
             grid-column: 1 / -1;
-            background: linear-gradient(135deg, #0066ff, #0088ff);
-            color: white;
+            background: rgba(0, 0, 0, 0.4); /* Transprent background */
             border-radius: 16px;
             padding: 30px;
-            box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+            backdrop-filter: blur(5px);
             text-align: left;
         }
 
         .status-badge {
             display: inline-flex;
             align-items: center;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(16, 185, 129, 0.3); /* Green transparent badge */
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 11px;
@@ -54,6 +57,7 @@
             letter-spacing: 0.5px;
             margin-bottom: 14px;
             text-transform: uppercase;
+            color: #34d399; /* Light green text */
         }
 
         .header-card h1 {
@@ -71,18 +75,16 @@
 
         /* Stats Grid Cards */
         .stat-card {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1); /* Light transparent card */
+            backdrop-filter: blur(5px);
             border-radius: 14px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .stat-label {
             font-size: 12px;
-            color: #666;
+            color: rgba(255, 255, 255, 0.7);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 6px;
@@ -91,7 +93,7 @@
         .stat-value {
             font-size: 20px;
             font-weight: 700;
-            color: #111;
+            color: #fff;
         }
 
         /* Section Title */
@@ -99,26 +101,26 @@
             grid-column: 1 / -1;
             font-size: 18px;
             font-weight: 700;
-            color: #1a1a1a;
+            color: #fff;
             margin: 10px 0 0 0;
             display: flex;
             align-items: center;
             gap: 6px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
         /* Module Cards */
         .module-card {
             grid-column: span 1;
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1); /* Light transparent card */
+            backdrop-filter: blur(5px);
             border-radius: 14px;
             padding: 24px;
             text-align: left;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .module-header {
@@ -135,12 +137,12 @@
         .module-title {
             font-size: 16px;
             font-weight: 700;
-            color: #111;
+            color: #fff;
         }
 
         .module-desc {
             font-size: 13px;
-            color: #555;
+            color: rgba(255, 255, 255, 0.8);
             line-height: 1.5;
             margin-bottom: 20px;
         }
@@ -148,7 +150,7 @@
         .btn {
             display: block;
             width: 100%;
-            background: #0066ff;
+            background: #0066ff; /* Blue button */
             color: white;
             text-align: center;
             padding: 12px;
@@ -156,7 +158,7 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 13px;
-            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
             transition: background 0.2s;
         }
 
@@ -178,7 +180,7 @@
         <!-- Quick Stats -->
         <div class="stat-card">
             <div class="stat-label">System Status</div>
-            <div class="stat-value" style="color: #10b981;">Active</div>
+            <div class="stat-value" style="color: #34d399;">Active</div>
         </div>
 
         <div class="stat-card">
