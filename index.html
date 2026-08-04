@@ -18,7 +18,6 @@
             line-height: 1.6;
         }
 
-        /* Top Hero Banner */
         .hero {
             background: linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.95)), 
                         url('WhatsApp Image 2026-08-04 at 9.31.15 PM (1).jpeg');
@@ -29,12 +28,17 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        /* Logo image styling */
         .logo-img {
             width: 140px;
-            height: auto;
+            height: 140px;
+            object-fit: contain;
             margin-bottom: 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 12px;
+            background: #ffffff;
+            padding: 5px;
+            border: 2px solid rgba(212, 175, 55, 0.6);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
 
         .hero h1 {
@@ -65,12 +69,11 @@
             padding: 40px 20px;
         }
 
-        /* Section Headings */
         .section-title {
             text-align: center;
             font-size: 26px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin: 40px 0 20px 0;
             color: #ffffff;
         }
 
@@ -78,12 +81,10 @@
             color: #38bdf8;
         }
 
-        /* Featured Products Grid */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin-bottom: 50px;
         }
 
         .product-card {
@@ -98,9 +99,6 @@
             font-size: 18px;
             color: #ffffff;
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
         .product-card p {
@@ -119,12 +117,10 @@
             margin-bottom: 5px;
         }
 
-        /* Workspace Modules */
         .modules-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin-bottom: 50px;
         }
 
         .module-box {
@@ -162,7 +158,6 @@
             box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
         }
 
-        /* Contact & Info Section */
         .info-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -171,7 +166,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             padding: 30px;
-            margin-bottom: 40px;
+            margin-top: 20px;
         }
 
         .info-box h3 {
@@ -193,13 +188,13 @@
             text-decoration: none;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             font-size: 12px;
             color: #64748b;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -207,7 +202,9 @@
 
     <!-- Hero Banner -->
     <div class="hero">
-        <img src="1000806254.png" alt="Koshi Enterprises Logo" class="logo-img">
+        <!-- YAHAN APNE LOGO KA SAHI FILE NAME LIKHEIN (Jaise: logo.png ya 1000806254.jpg) -->
+        <img src="1000806254.png" alt="Koshi Enterprises Logo" class="logo-img" onerror="this.style.display='none'">
+        
         <h1>KOSHI ENTERPRISES</h1>
         <div class="tagline">"Your All-in-One Professional Document Generation Hub."</div>
         <p class="desc">Koshi Enterprises is a trusted professional services and digital solutions provider, offering a secure centralized workspace for automated business documentation, quotation generation, and corporate branding tools.</p>
