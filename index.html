@@ -28,18 +28,6 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .logo-img {
-            width: 140px;
-            height: 140px;
-            object-fit: contain;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            background: #ffffff;
-            padding: 5px;
-            border: 2px solid rgba(212, 175, 55, 0.6);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-
         .hero h1 {
             font-size: 32px;
             font-weight: 800;
@@ -157,32 +145,29 @@
             box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
         }
 
-        .info-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        /* Sirf Contact Info ke liye single box */
+        .contact-section {
             background: rgba(15, 23, 42, 0.9);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             padding: 30px;
-            margin-top: 20px;
+            margin-top: 40px;
+            text-align: center;
         }
 
-        .info-box h3 {
-            font-size: 15px;
+        .contact-section h3 {
+            font-size: 18px;
             color: #38bdf8;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            margin-bottom: 15px;
         }
 
-        .info-box p {
-            font-size: 13px;
+        .contact-section p {
+            font-size: 14px;
             color: #cbd5e1;
             margin-bottom: 8px;
         }
 
-        .info-box a {
+        .contact-section a {
             color: #38bdf8;
             text-decoration: none;
         }
@@ -201,7 +186,6 @@
 
     <!-- Hero Banner -->
     <div class="hero">
-        <!-- Direct Logo Image Tag (Using SVG fallback/icon container if needed, or direct render) -->
         <div style="width: 120px; height: 120px; margin: 0 auto 15px auto; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; border: 2px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
             <span style="font-size: 32px; font-weight: 900; color: #0b0f19; font-family: sans-serif;">KE</span>
         </div>
@@ -254,25 +238,12 @@
             </div>
         </div>
 
-        <!-- Official Details & Banking -->
-        <h2 class="section-title">Compliance & <span>Official Details</span></h2>
-        <div class="info-section">
-            <div class="info-box">
-                <h3>📜 Tax Details</h3>
-                <p><strong>GSTIN:</strong> 10CJAPK9167R1ZQ</p>
-            </div>
-            <div class="info-box">
-                <h3>🏦 Banking Details</h3>
-                <p><strong>Bank:</strong> HDFC Bank</p>
-                <p><strong>A/c:</strong> 50200099372362</p>
-                <p><strong>IFSC:</strong> HDFC0002353</p>
-            </div>
-            <div class="info-box">
-                <h3>📞 Contact Us</h3>
-                <p><strong>Email:</strong> prashantkumarsaharsa5@gmail.com</p>
-                <p><strong>Phone:</strong> 8864097233</p>
-                <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/SR7Uy4pE84MD7Kza6?g_st=awb" target="_blank">Google Maps 📍</a></p>
-            </div>
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3>📞 Get in Touch</h3>
+            <p><strong>Email:</strong> prashantkumarsaharsa5@gmail.com</p>
+            <p><strong>Phone / WhatsApp:</strong> 8864097233</p>
+            <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/SR7Uy4pE84MD7Kza6?g_st=awb" target="_blank">Google Maps Direction 📍</a></p>
         </div>
 
     </div>
