@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koshi Enterprises Workspace</title>
+    <title>Koshi Enterprises - Professional Workspace & Government Supplies</title>
     <style>
         * {
             box-sizing: border-box;
@@ -13,16 +13,14 @@
         }
 
         body {
-            /* Photo bilkul clear aur visible rakhne ke liye light clean tint */
-            background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), 
-                url('WhatsApp Image 2026-08-04 at 9.31.15 PM (1).jpeg');
+            background: linear-gradient(rgba(10, 15, 29, 0.85), rgba(10, 15, 29, 0.85)), 
+                        url('WhatsApp Image 2026-08-04 at 9.31.15 PM (1).jpeg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            color: #111;
-            padding: 40px 20px;
+            color: #f8fafc;
+            padding: 30px 15px;
             display: flex;
             justify-content: center;
             min-height: 100vh;
@@ -30,218 +28,268 @@
 
         .container {
             width: 100%;
-            max-width: 1300px;
+            max-width: 1200px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        /* Top Header Card */
+        /* Header / Brand Section */
         .header-card {
             grid-column: 1 / -1;
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(8px);
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(12px);
             border-radius: 16px;
             padding: 30px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-        }
-
-        .status-badge {
-            display: inline-flex;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
             align-items: center;
-            background: rgba(16, 185, 129, 0.15);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .brand-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+
+        .brand-text h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #ffffff;
             letter-spacing: 0.5px;
-            margin-bottom: 14px;
-            text-transform: uppercase;
-            color: #059669;
         }
 
-        .header-card h1 {
-            font-size: 28px;
-            font-weight: 700;
-            color: #111;
-            margin-bottom: 10px;
-            line-height: 1.2;
+        .brand-text .tagline {
+            font-size: 13px;
+            color: #38bdf8;
+            margin-top: 4px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
-        .header-card p {
-            font-size: 14px;
-            color: #444;
+        .brand-text .desc {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 8px;
+            max-width: 600px;
             line-height: 1.4;
         }
 
-        /* Stats Grid Cards */
-        .stat-card {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(8px);
-            border-radius: 14px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-        }
-
-        .stat-label {
-            font-size: 12px;
-            color: #555;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 6px;
+        .status-badge {
+            background: rgba(16, 185, 129, 0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
             font-weight: 600;
+            color: #34d399;
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            text-transform: uppercase;
         }
 
-        .stat-value {
-            font-size: 20px;
-            font-weight: 700;
-            color: #111;
-        }
-
-        /* Section Title */
+        /* Section Titles */
         .section-title {
             grid-column: 1 / -1;
             font-size: 18px;
             font-weight: 700;
-            color: #111;
-            margin: 10px 0 0 0;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+            color: #ffffff;
+            margin-top: 10px;
+            border-left: 4px solid #0066ff;
+            padding-left: 10px;
+            letter-spacing: 0.5px;
         }
 
-        /* Module Cards */
-        .module-card {
-            grid-column: span 1;
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(8px);
+        /* Module & Info Cards */
+        .card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
             border-radius: 14px;
             padding: 24px;
-            text-align: left;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
-        .module-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-        }
-
-        .module-icon {
-            font-size: 20px;
-        }
-
-        .module-title {
+        .card-title {
             font-size: 16px;
             font-weight: 700;
-            color: #111;
+            color: #ffffff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .module-desc {
+        .card-desc {
             font-size: 13px;
-            color: #555;
+            color: #cbd5e1;
             line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card-list {
+            font-size: 12px;
+            color: #94a3b8;
+            list-style: none;
             margin-bottom: 20px;
+        }
+
+        .card-list li {
+            margin-bottom: 6px;
+        }
+
+        .card-list strong {
+            color: #f1f5f9;
         }
 
         .btn {
             display: block;
             width: 100%;
-            background: #0066ff;
+            background: linear-gradient(135deg, #0066ff, #00c6ff);
             color: white;
             text-align: center;
             padding: 12px;
-            border-radius: 10px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
             font-size: 13px;
-            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
-            transition: background 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
+            transition: opacity 0.2s;
         }
 
         .btn:hover {
-            background: #0052cc;
+            opacity: 0.9;
+        }
+
+        /* Info Details Box (Bank, GST, Contact) */
+        .info-box {
+            font-size: 13px;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .info-box p {
+            margin-bottom: 8px;
+        }
+
+        .info-box strong {
+            color: #38bdf8;
+        }
+
+        @media(max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .header-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Top Workspace Banner -->
+        
+        <!-- Header & Branding -->
         <div class="header-card">
-            <div class="status-badge">● System Operational & Online</div>
-            <h1>Koshi Enterprises Workspace</h1>
-            <p>Centralized portal to access all official business documents and generation tools securely.</p>
+            <div class="brand-info">
+                <!-- Aapke naye logo ki image yahan link ki gayi hai -->
+                <img src="1000806254.png" alt="Koshi Enterprises Logo" class="logo-img">
+                <div class="brand-text">
+                    <h1>KOSHI ENTERPRISES</h1>
+                    <div class="tagline">"Your All-in-One Professional Document Generation Hub."</div>
+                    <div class="desc">Koshi Enterprises is a trusted professional services and digital solutions provider, offering a secure centralized workspace for automated business documentation, quotation generation, and corporate branding tools.</div>
+                </div>
+            </div>
+            <div>
+                <div class="status-badge">● System Online</div>
+            </div>
         </div>
 
-        <!-- Quick Stats -->
-        <div class="stat-card">
-            <div class="stat-label">System Status</div>
-            <div class="stat-value" style="color: #059669;">Active</div>
-        </div>
+        <div class="section-title">🏛️ Government Supplies & Business Portfolio</div>
 
-        <div class="stat-card">
-            <div class="stat-label">Available Tools</div>
-            <div class="stat-value">3 Active</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-label">Security Protocol</div>
-            <div class="stat-value">SSL 256-bit</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-label">Portal Version</div>
-            <div class="stat-value">v3.0 Pro</div>
+        <!-- Product / Service Card -->
+        <div class="card" style="grid-column: span 3;">
+            <div class="card-title">📦 Institutional School Supplies & Essentials</div>
+            <div class="card-desc">Government schools aur educational institutions ke liye bulk quantity mein quality-assured materials aur daily-use essentials ki reliable supply.</div>
+            <ul class="card-list">
+                <li><strong>Key Features:</strong> Government standards aur specifications ke mutabiq durability aur safety ka dhyan rakh kar tayar kiye gaye products.</li>
+                <li><strong>Service Type:</strong> State ya district-level government education departments ke tenders ke tahat schools tak samagri ki samay par aur surakshit delivery.</li>
+            </ul>
         </div>
 
         <div class="section-title">⚡ Available Workspace Modules</div>
 
-        <!-- Module 1: Quotation Generator -->
-        <div class="module-card">
+        <!-- Module 1 -->
+        <div class="card">
             <div>
-                <div class="module-header">
-                    <span class="module-icon">📊</span>
-                    <span class="module-title">Quotation Generator</span>
-                </div>
-                <div class="module-desc">Quickly generate standard L1, L2, L3 quotation PDFs with automated pricing calculation and company layout.</div>
+                <div class="card-title">📊 Quotation Generator</div>
+                <div class="card-desc">Quickly generate standard L1, L2, L3 quotation PDFs with automated pricing calculation and company layout.</div>
             </div>
             <a href="#" class="btn">Open Generator 🚀</a>
         </div>
 
-        <!-- Module 2: Letterhead Generator -->
-        <div class="module-card">
+        <!-- Module 2 -->
+        <div class="card">
             <div>
-                <div class="module-header">
-                    <span class="module-icon">📄</span>
-                    <span class="module-title">Letterhead Generator</span>
-                </div>
-                <div class="module-desc">Create official Koshi Enterprises letterhead documents with aligned headers, footer details, and printable formatting.</div>
+                <div class="card-title">📄 Letterhead Generator</div>
+                <div class="card-desc">Create official Koshi Enterprises letterhead documents with aligned headers, footer details, and printable formatting.</div>
             </div>
             <a href="#" class="btn">Open Generator 🚀</a>
         </div>
 
-        <!-- Module 3: Resume Builder -->
-        <div class="module-card">
+        <!-- Module 3 -->
+        <div class="card">
             <div>
-                <div class="module-header">
-                    <span class="module-icon">📝</span>
-                    <span class="module-title">Resume Builder</span>
-                </div>
-                <div class="module-desc">Create professional resumes with live preview, customizable sections, and instant print/PDF download option.</div>
+                <div class="card-title">📝 Resume Builder</div>
+                <div class="card-desc">Create professional resumes with live preview, customizable sections, and instant print/PDF download option.</div>
             </div>
             <a href="#" class="btn">Open Builder 🚀</a>
         </div>
+
+        <div class="section-title">📋 Official Details & Banking Information</div>
+
+        <!-- Compliance & Legal Info -->
+        <div class="card" style="grid-column: span 1;">
+            <div class="card-title">📜 Tax & Registration</div>
+            <div class="info-box">
+                <p><strong>GSTIN Number:</strong><br>10CJAPK9167R1ZQ</p>
+            </div>
+        </div>
+
+        <!-- Bank Details -->
+        <div class="card" style="grid-column: span 1;">
+            <div class="card-title">🏦 Bank Account Details</div>
+            <div class="info-box">
+                <p><strong>Bank:</strong> HDFC Bank</p>
+                <p><strong>A/c Number:</strong> 50200099372362</p>
+                <p><strong>IFSC Code:</strong> HDFC0002353</p>
+            </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="card" style="grid-column: span 1;">
+            <div class="card-title">📞 Contact & Location</div>
+            <div class="info-box">
+                <p><strong>Email:</strong> prashantkumarsaharsa5@gmail.com</p>
+                <p><strong>Phone / WhatsApp:</strong> 8864097233</p>
+                <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/SR7Uy4pE84MD7Kza6?g_st=awb" target="_blank" style="color: #38bdf8; text-decoration: none;">Google Maps Direction 📍</a></p>
+            </div>
+        </div>
+
     </div>
 
 </body>
